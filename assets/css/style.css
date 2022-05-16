@@ -96,6 +96,11 @@ header li {
   padding: 10px;
 }
 
+header li:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+}
+
 @media screen and (min-width: 600px) {
   header ul {
     display: initial;

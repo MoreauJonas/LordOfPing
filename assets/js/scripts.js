@@ -9,4 +9,6 @@ document.addEventListener("click", function (e) {
     mobile.classList.remove("active");
     menu.classList.remove("active");
   }
+
+  /* CHICKEN LOVER SONG */
 });
