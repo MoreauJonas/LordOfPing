@@ -23,7 +23,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
@@ -114,4 +114,25 @@ header li:hover {
   #headerMenu {
     display: flex;
   }
+}  
+main {
+  margin: 0 auto 100px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+#welcome {
+  height: 500px;
+  background-image: url("/assets/img/cover.jpg");
+  background-size: cover;
+}
+#about {
+  text
+}
+h1 {
+  font-size: 8em;
+  color: white;
+  text-shadow: 4px 2px #333;
+  text-align: center;
 }
