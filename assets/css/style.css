@@ -177,46 +177,6 @@ main > h1 {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) {
-  header ul {
-    display: initial;
-  }
-  #mobileMenu {
-    display: none;
-  }
-  .header {
-    justify-content: flex-start;
-  }
-  #headerMenu {
-    display: flex;
-  }
-  .shop {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .shopGame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  main {
-    max-width: 1600px;
-  }
-  .header {
-    max-width: 1600px;
-  }
-  .shop {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  }
-}
-main {
-  margin: 0 auto 100px;
-  max-width: 1000px;
-  width: 100%;
-}
-
 #welcome {
   height: 300px;
   background-image: url("/assets/img/cover.jpg");
@@ -258,4 +218,39 @@ h1 {
   color: #fff;
   background-color: transparent;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  header ul {
+    display: initial;
+  }
+  #mobileMenu {
+    display: none;
+  }
+  .header {
+    justify-content: flex-start;
+  }
+  #headerMenu {
+    display: flex;
+  }
+  .shop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .shopGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  main {
+    max-width: 1600px;
+  }
+  .header {
+    max-width: 1600px;
+  }
+  .shop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
