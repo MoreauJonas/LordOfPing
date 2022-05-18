@@ -101,6 +101,20 @@ header li:hover {
   border-radius: 15px;
 }
 
+main {
+  margin: 0 auto 100px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+main > h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 32px 0;
+}
+
 @media screen and (min-width: 600px) {
   header ul {
     display: initial;
