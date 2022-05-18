@@ -127,7 +127,7 @@ main {
   background-image: url("/assets/img/cover.jpg");
   background-size: cover;
 }
-#about h2 {
+#about {
   text-align: center;
   margin: 4rem;
 }
