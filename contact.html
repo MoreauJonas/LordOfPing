@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Lord Of Pings</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
   </head>
   <body>
     <header>
@@ -19,11 +20,56 @@
           <li><a href="army.html">Armée</a></li>
           <li><a href="exploits.html">Exploits</a></li>
           <li><a href="shop.html">Boutique</a></li>
+          <li><a href="livredor.html">Livre d'Or</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </div>
     </header>
+
+    <h1>
+      Pour nous joindre, n'hésitez pas à nous laissez vos coordonnées et un
+      message:
+    </h1>
+
     <main></main>
-    <footer>Site créé par Lord Of Pings</footer>
+    <section class="contact">
+      <form id="contactForm">
+        <label for="name">Votre patronyme:</label>
+        <input type="text" id="name" name="name" value="Frodon" />
+        <label for="rang">Choisissez votre rang:</label>
+
+        <select name="rang" id="rang-select">
+          <option value="">Votre rang:</option>
+          <option value="Roi">Roi / Reine</option>
+          <option value="noble">Noblesse</option>
+          <option value="clerge">Clergé</option>
+          <option value="roturier">Roturier</option>
+          <option value="creature">Créature fantastique</option>
+          <option value="magie">Créature magique</option>
+        </select>
+
+        <label for="message">Votre message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Laissez votre message ici..."
+        ></textarea>
+
+        <label for="envoi">Choisissez votre mode d'envoi:</label>
+        <select name="envoi" id="envoi-select">
+          <option value="">Les modes d'envoi:</option>
+          <option value="feu">Nuage de fumée</option>
+          <option value="pigeon">Pigeon</option>
+          <option value="messager">Messager</option>
+          <option value="phoenix">Phoenix</option>
+          <option value="telepathie">Télépathie</option>
+          <option value="tardis">Tardis</option>
+        </select>
+
+        <input type="submit" value="Envoyer" />
+      </form>
+    </section>
+    <footer>Site créé par <a href="secret.html">Lord Of Pings</a></footer>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
