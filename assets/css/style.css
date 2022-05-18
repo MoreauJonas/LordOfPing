@@ -19,10 +19,9 @@ html {
 footer {
   background: #1f1f1f;
   height: 60px;
+  line-height: 60px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   position: fixed;
   bottom: 0;
 }
@@ -157,6 +156,26 @@ main > h1 {
   user-select: none;
 }
 
+.shopGame {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.shopDesc {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.shopPlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 768px) {
   header ul {
     display: initial;
@@ -172,6 +191,11 @@ main > h1 {
   }
   .shop {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .shopGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
