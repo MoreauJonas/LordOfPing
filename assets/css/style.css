@@ -249,7 +249,7 @@ a.slide__next,
   top: 48%;
   width: 35px;
   height: 35px;
-  border: solid black;
+  border: solid #343434;
   border-width: 0 4px 4px 0;
   padding: 3px;
   box-sizing: border-box;
@@ -281,27 +281,30 @@ a.slide__next,
   background-color: black;
   margin: 0 10px 0 10px;
 }
+.slider__navlink:hover {
+  background-color: #f3f3f3;
+}
 
 #slides__1 {
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/seigneur-anneaux-imax-4k.jpeg");
 }
 
 #slides__2 {
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/téléchargement.jpeg");
 }
 
 #slides__3 {
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/8-heroic-fantasy.jpeg");
 }
 
 #slides__4 {
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/link.jpg");
 }
 
 #welcome {
   height: 300px;
   width: 100%;
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/cover.jpg");
   background-size: cover;
 }
 #welcome h1 {
