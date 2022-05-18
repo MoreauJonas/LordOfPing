@@ -24,10 +24,10 @@
         </ul>
       </div>
     </header>
+    <section id="welcome">
+      <h1>The Lord of Pings</h1>
+    </section>
     <main>
-      <section id="welcome">
-        <h1>The Lord of Pings</h1>
-      </section>
       <section id="about">
         <h2>Bienvenue à toi, noble étranger.</h2>
         <p>
@@ -46,6 +46,35 @@
           <a href="shop.html">notre boutique</a> !
         </p>
       </section>
+
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div id="slides__1" class="slide">
+              <a class="slide__prev" href="#slides__4" title="Next"></a>
+              <a class="slide__next" href="#slides__2" title="Next"></a>
+            </div>
+            <div id="slides__2" class="slide">
+              <a class="slide__prev" href="#slides__1" title="Prev"></a>
+              <a class="slide__next" href="#slides__3" title="Next"></a>
+            </div>
+            <div id="slides__3" class="slide">
+              <a class="slide__prev" href="#slides__2" title="Prev"></a>
+              <a class="slide__next" href="#slides__4" title="Next"></a>
+            </div>
+            <div id="slides__4" class="slide">
+              <a class="slide__prev" href="#slides__3" title="Prev"></a>
+              <a class="slide__next" href="#slides__1" title="Prev"></a>
+            </div>
+          </div>
+          <div class="slider__nav">
+            <a class="slider__navlink" href="#slides__1"></a>
+            <a class="slider__navlink" href="#slides__2"></a>
+            <a class="slider__navlink" href="#slides__3"></a>
+            <a class="slider__navlink" href="#slides__4"></a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>Site créé par <a href="secret.html">Lord Of Pings</a></footer>
     <script src="assets/js/scripts.js"></script>
