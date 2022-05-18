@@ -127,8 +127,9 @@ main {
   background-image: url("/assets/img/cover.jpg");
   background-size: cover;
 }
-#about {
-  text
+#about h2 {
+  text-align: center;
+  margin: 4rem;
 }
 h1 {
   font-size: 8em;
