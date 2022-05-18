@@ -27,18 +27,38 @@
     <section id="contact">
       <form id="contactForm">
         <label for="name">Votre patronyme:</label><br />
-        <input type="text" id="name" name="name" value="John" /><br />
-        <label for="rang">Votre rang</label><br />
-        <input
-          type="rang"
-          id="rang"
-          name="rang"
-          value=""
-        /><br />
-        <label for="message">Votre message (mais pas trop long)</label><br />
+        <input type="text" id="name" name="name" value="John" /> <br /><br />
+        <label for="rang">Choisissez votre rang:</label><br />
+
+<select name="rang" id="rang-select">
+    <option value="">Votre rang:</option>
+    <option value="Roi">Roi / Reine</option>
+    <option value="noble">Noblesse</option>
+    <option value="clerge">Clergé</option>
+    <option value="roturier">Roturier</option>
+    <option value="creature">Créature fantastique</option>
+    <option value="magie">Créature magique</option>
+</select>
+
+<br /><br />
+        <label for="message">Votre message</label><br />
         <textarea id="message" name="message"></textarea>
         <br /><br />
+
+        <label for="envoi">Choisissez votre mode d'envoi:</label><br />
+        <select name="envoi" id="envoi-select">
+          <option value="">Les modes d'envoi:</option>
+          <option value="feu">Nuage de fumée</option>
+          <option value="pigeon">Pigeon</option>
+          <option value="messager">Messager</option>
+          <option value="phoenix">Phoenix</option>
+          <option value="telepathie">Télépathie</option>
+          <option value="tardis">Tardis</option>
+        </select>
+        <br /><br />
         <input type="submit" value="Envoyer" />
+
+
       </form>
     </section>
     <footer>Site créé par Lord Of Pings</footer>
