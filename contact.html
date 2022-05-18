@@ -20,16 +20,20 @@
           <li><a href="army.html">Armée</a></li>
           <li><a href="exploits.html">Exploits</a></li>
           <li><a href="shop.html">Boutique</a></li>
+          <li><a href="livredor.html">Livre d'Or</a></li>
           <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </div>
     </header>
+
+    <h1>Pour nous joindre, n'hésitez pas à nous laissez vos coordonnées et un message:</h1>
+
     <main></main>
-    <section id="contact">
+    <section class="contact">
       <form id="contactForm">
-        <label for="name">Votre patronyme:</label><br />
-        <input type="text" id="name" name="name" value="John" /> <br /><br />
-        <label for="rang">Choisissez votre rang:</label><br />
+        <label for="name">Votre patronyme:</label>
+        <input type="text" id="name" name="name" value="Frodon" />
+        <label for="rang">Choisissez votre rang:</label>
 
     <select name="rang" id="rang-select">
       <option value="">Votre rang:</option>
@@ -41,13 +45,10 @@
       <option value="magie">Créature magique</option>
     </select>
 
-    <br /><br />
-    <label for="message">Votre message</label><br />
-     <textarea id="message" name="message"></textarea>
-     <br /><br />
+    <label for="message">Votre message:</label>
+     <textarea id="message" name="message" placeholder="Laissez votre message ici..."></textarea>
 
-    <label for="envoi">Choisissez votre mode d'envoi:</label><br />
-
+    <label for="envoi">Choisissez votre mode d'envoi:</label>
     <select name="envoi" id="envoi-select">
       <option value="">Les modes d'envoi:</option>
       <option value="feu">Nuage de fumée</option>
@@ -57,12 +58,12 @@
       <option value="telepathie">Télépathie</option>
       <option value="tardis">Tardis</option>
     </select>
-    <br /><br />
     
     <input type="submit" value="Envoyer" />
 
       </form>
     </section>
     <footer>Site créé par Lord Of Pings</footer>
+    <script src="assets/js/scripts.js"></script>
   </body>
 </html>
