@@ -12,3 +12,13 @@ document.addEventListener("click", function (e) {
 
   /* CHICKEN LOVER SONG */
 });
+
+const message =
+  "Merci de nous avoir contacté, si votre question ou suggestion est pertinente, nous vous répondrons sous peu !";
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert(message);
+  });
