@@ -1,0 +1,46 @@
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+
+#envoi-select {
+    margin: 15px;
+    width: 300px;
+    font-size: 15px;
+}
+
+#name {
+    font-size: 15px;
+    width: 300px;
+}
+
+#rang-select {
+    margin: 15px;
+    width: 300px;
+    font-size: 15px;
+}
+
+
+h1 {
+    padding: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+
+input {
+    margin: 15px;
+    width: 150px;
+}
+
+label {
+    margin: 0px 15px 0px 15px;
+}
+
+textarea {
+    margin: 15px;
+    min-height: 80px;
+    min-width: 300px;
+}
+
