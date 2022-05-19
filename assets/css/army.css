@@ -10,7 +10,7 @@ section.army img {
 }
 
 .armyGeneral::after, .armyCommander::after {
-  content: "Lorem iameingameingampsum dolor sit ameameingameining elit. Laboriosam delectus";
+  content: "Abdou-Rahim Kerkeb";
   display: flex;
   align-items: center;
   position: absolute;
@@ -21,7 +21,7 @@ section.army img {
 }
 
 .armyCommander::after {
-  content: "Lorem iameingameingampsum dolor sit ameameingameining elit. Laboriosam delectus";
+  content: "Thomas Munsch";
   height: 150px;
   margin-left: 170px;
 }
@@ -108,21 +108,26 @@ section.army img {
 .armySoldier {
   display: flex;
   padding: 5px 15px;
+  width: 182px;
+  font-size: 18px;
+  line-height: 18px;
+  align-items: center;
+  height: 50px;
+
+  
 }
 
 .armySoldier img {
-  width: 50px; 
+  width: 50px;
+  min-width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-right: 10px;
+  box-sizing: initial;
 }
-
-.armySoldier p {
-  padding: 0 10px;
-}
-
 
 /* responsive */
-@media screen and (min-width: 565px) {
+@media screen and (min-width: 564px) {
   .tree {
     margin-top: -69.333%;
   }
