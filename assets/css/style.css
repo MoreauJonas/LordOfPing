@@ -19,10 +19,9 @@ html {
 footer {
   background: #1f1f1f;
   height: 60px;
+  line-height: 60px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   position: fixed;
   bottom: 0;
 }
@@ -33,6 +32,7 @@ header {
   padding: 0 20px;
   display: flex;
   justify-content: center;
+  user-select: none;
 }
 
 .header {
@@ -78,9 +78,10 @@ header ul {
   display: flex;
   list-style: none;
   margin: 0;
-  /* padding: 0 20px; */
+  padding: 10px;
   display: none;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 header ul.active {
@@ -98,14 +99,14 @@ header li {
 
 header li:hover {
   background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 main {
-  margin: 0 auto 100px;
+  margin: 0 auto;
   max-width: 1000px;
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px 80px;
   box-sizing: border-box;
 }
 
@@ -115,45 +116,209 @@ main > h1 {
   margin: 32px 0;
 }
 
-@media screen and (min-width: 600px) {
-  header ul {
-    display: initial;
-  }
-  #mobileMenu {
-    display: none;
-  }
-  .header {
-    justify-content: flex-start;
-  }
-  #headerMenu {
-    display: flex;
-  }
-}  
-main {
-  margin: 0 auto 100px;
-  max-width: 1000px;
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   width: 100%;
 }
 
+.shopCase {
+  width: 100%;
+  height: 100%;
+}
+
+.shopCase img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.shopCase div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.shopCase h2 {
+  font-size: 10px;
+  margin: 6px;
+}
+
+.shopCase button {
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 16px;
+  border-radius: 8px;
+  color: #fff;
+  user-select: none;
+}
+
+.shopGame {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.shopDesc {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.shopPlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  box-sizing: border-box;
+  background: white;
+  transform-origin: center center;
+  transform: scale(1);
+  background-size: cover;
+}
+
+.slide a {
+  background: none;
+  border: none;
+}
+
+a.slide__prev,
+.slider::before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 5%;
+}
+
+a.slide__next,
+.slider::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 5%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
+  position: absolute;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  border: solid #343434;
+  border-width: 0 4px 4px 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+.slider__nav {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.slider__navlink {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 10px 0 10px;
+}
+.slider__navlink:hover {
+  background-color: #f3f3f3;
+}
+
+#slides__1 {
+  background-image: url("../img/seigneur-anneaux-imax-4k.jpeg");
+}
+
+#slides__2 {
+  background-image: url("../img/téléchargement.jpeg");
+}
+
+#slides__3 {
+  background-image: url("../img/8-heroic-fantasy.jpeg");
+}
+
+#slides__4 {
+  background-image: url("../img/link.jpg");
+}
 
 #welcome {
   height: 300px;
-  background-image: url("/assets/img/cover.jpg");
+  width: 100%;
+  background-image: url("../img/cover.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
-#about {
-  text-align: left;
-  margin: 4rem;
-}
-h1 {
+#welcome h1 {
   font-size: 320%;
   color: white;
   text-shadow: 4px 2px #333;
   text-align: center;
+  line-height: 300px;
+  margin: 0;
+}
+
+#about {
+  text-align: left;
+  margin: 4rem;
 }
 #about a:link {
   color: #fff;
@@ -177,4 +342,39 @@ h1 {
   color: #fff;
   background-color: transparent;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  header ul {
+    display: initial;
+  }
+  #mobileMenu {
+    display: none;
+  }
+  .header {
+    justify-content: flex-start;
+  }
+  #headerMenu {
+    display: flex;
+  }
+  .shop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .shopGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  main {
+    max-width: 1600px;
+  }
+  .header {
+    max-width: 1600px;
+  }
+  .shop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
