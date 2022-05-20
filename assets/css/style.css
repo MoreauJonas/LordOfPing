@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-
+       
 header a {
   text-decoration: none;
   color: #fff;
@@ -25,6 +25,7 @@ footer {
   position: fixed;
   bottom: 0;
 }
+              /*---- Header ----*/
 
 header {
   background: #1f1f1f;
@@ -101,6 +102,7 @@ header li:hover {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
 }
+         /*---- Présentation ----*/
 
 main {
   margin: 0 auto;
@@ -176,7 +178,7 @@ main > h1 {
   padding: 10px;
   box-sizing: border-box;
 }
-
+          /*---- Carousel ----*/
 .slider-container {
   display: flex;
   align-items: center;
@@ -220,6 +222,7 @@ main > h1 {
   transform-origin: center center;
   transform: scale(1);
   background-size: cover;
+  background-position: center center;
 }
 
 .slide a {
@@ -231,14 +234,14 @@ a.slide__prev,
 .slider::before {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  left: 5%;
+  left: 2%;
 }
 
 a.slide__next,
 .slider::after {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  right: 5%;
+  right: 2%;
 }
 
 .slider::before,
@@ -249,9 +252,9 @@ a.slide__next,
   top: 48%;
   width: 35px;
   height: 35px;
-  border: solid #343434;
+  border: solid #969595;
   border-width: 0 4px 4px 0;
-  padding: 3px;
+  padding: 15px;
   box-sizing: border-box;
 }
 
@@ -278,11 +281,11 @@ a.slide__next,
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #969595;
   margin: 0 10px 0 10px;
 }
 .slider__navlink:hover {
-  background-color: #f3f3f3;
+  background-color: #6c6b6b;
 }
 
 #slides__1 {
@@ -290,15 +293,19 @@ a.slide__next,
 }
 
 #slides__2 {
-  background-image: url("../img/téléchargement.jpeg");
+  background-image: url("../img/Kaamelott.jpg");
 }
 
 #slides__3 {
-  background-image: url("../img/8-heroic-fantasy.jpeg");
+  background-image: url("../img/link.jpg");
 }
 
 #slides__4 {
-  background-image: url("../img/link.jpg");
+  background-image: url("../img/azog.jpg");
+}
+
+#slides__5{
+  background-image: url("../img/paysage.jpg");
 }
 
 #welcome {
@@ -343,6 +350,7 @@ a.slide__next,
   background-color: transparent;
   text-decoration: underline;
 }
+       /*---- section responsive ----*/
 
 @media screen and (min-width: 768px) {
   header ul {
@@ -368,7 +376,7 @@ a.slide__next,
 }
 
 @media screen and (min-width: 1800px) {
-  main {
+  main  {
     max-width: 1600px;
   }
   .header {

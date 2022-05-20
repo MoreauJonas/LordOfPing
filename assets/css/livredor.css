@@ -1,0 +1,73 @@
+.C2etoiles{
+    background: red;
+    display: inline-block;
+    cursor: pointer;
+}
+.C2etoiles:hover{
+    background: green;
+}
+.C2etoiles div{
+    display: inline-block;
+    padding: 5px;
+}
+.C2etoiles div::after{
+    content:"\002605"; /* une étoile en Unicode */
+}
+
+
+h1 {
+    font-weight: 500;
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+    text-align: center;
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+}
+
+form label {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+form label {
+    margin-top: 25px;
+}
+
+form input, form select, form textarea {
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.478);
+}
+
+form button {
+    width: 450px;
+    max-width: 500px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 23px;
+    margin-top: 35px;
+    background: white;
+    border: rgba(48, 48, 48, 0.5) solid 1px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    color: #303030;
+}
+
+form div:last-child {
+    align-items:center;
+}
+
+
+
+
