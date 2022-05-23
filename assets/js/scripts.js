@@ -11,6 +11,20 @@ document.addEventListener("click", function (e) {
   }
 
   /* CHICKEN LOVER SONG */
+
+
+    /* ZOOM IMAGE (page-army) */ 
+    const zoom = document.getElementById("zoom");
+    if (zoom) {
+      const zoomImg = document.getElementById("zoom-img");
+      zoom.classList.remove("active");
+      for (let i = 1; i <= 24; i++) {
+        if (e.target.id === "family-img" + i) {
+          zoom.classList.add("active");
+          zoomImg.src = e.target.src;
+        }
+      }
+    }
 });
 
 /* CONTACT FORM */

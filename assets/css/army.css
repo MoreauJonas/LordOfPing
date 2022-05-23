@@ -1,8 +1,16 @@
 section.army img {
   object-fit: cover;
 }
+p{
+  margin-bottom: 50px;
+}
+
+#rejoindre{
+  margin-top: 50px;
+}
 
 .armyGeneral, .armyCommander {
+  
   color: black;
   border-radius: 5px;
   display: flex;
@@ -31,6 +39,7 @@ section.army img {
   width: 200px;
   z-index: 2;
   border-radius: 8px 8px 8px 0;
+  
 }
 
 .armyCommander img {
@@ -38,6 +47,7 @@ section.army img {
   width: 150px;
   z-index: 2;
   border-radius: 0 8px 8px 0;
+  
 }
 
 .armyLine {
@@ -46,6 +56,7 @@ section.army img {
   width: 3.5%;
   height: 100px;
 }
+
 
 /* GRID */
 
@@ -83,7 +94,6 @@ section.army img {
     0 100%
     );
 }
-
 .group1 { grid-area: 1 / 2 / 2 / 3; }
 .group2 { grid-area: 2 / 2 / 3 / 3; }
 .group3 { grid-area: 3 / 2 / 4 / 3; }
@@ -126,6 +136,35 @@ section.army img {
   box-sizing: initial;
 }
 
+/* ZOOM IMAGE */
+.zoom {
+  top: 0;
+  left: 0;
+  padding-left: 50vw;
+  width: 100%;
+  height: 100vh;
+  position: fixed; 
+  z-index: 100; 
+  display: none;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  
+}
+
+.zoom img {
+  position: relative;
+  width: 100%;
+  object-fit: contain!important;
+  height: calc(100vh - 60px);
+  padding: 30px;
+  margin-left: -100%;
+
+}
+
+.zoom.active {
+  display: flex;
+}
+
 /* responsive */
 @media screen and (min-width: 564px) {
   .tree {
@@ -155,7 +194,6 @@ section.army img {
     margin: auto;
     width: 1.55%;
   }
-
 
   .armyGrid {
     display: grid;
@@ -221,5 +259,4 @@ section.army img {
   .header {
     max-width: 1600px;
   }
-  
 }
