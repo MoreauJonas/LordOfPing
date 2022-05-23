@@ -218,10 +218,11 @@ main > h1 {
   scroll-snap-align: center;
   margin-right: 0px;
   box-sizing: border-box;
-  background: white;
+  background-color: white;
   transform-origin: center center;
+  background-repeat: no-repeat;
   transform: scale(1);
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
 }
 
@@ -289,23 +290,23 @@ a.slide__next,
 }
 
 #slides__1 {
-  background-image: url("../img/seigneur-anneaux-imax-4k.jpeg");
+  background-image: url("../img/poulet-aux-fusils.jpg");
 }
 
 #slides__2 {
-  background-image: url("../img/Kaamelott.jpg");
+  background-image: url("../img/poulet.png");
 }
 
 #slides__3 {
-  background-image: url("../img/link.jpg");
+  background-image: url("../img/poulet2.jpg");
 }
 
 #slides__4 {
-  background-image: url("../img/azog.jpg");
+  background-image: url("../img/poulet3.jpg");
 }
 
 #slides__5{
-  background-image: url("../img/paysage.jpg");
+  background-image: url("../img/poulet4.jpg");
 }
 
 #welcome {
