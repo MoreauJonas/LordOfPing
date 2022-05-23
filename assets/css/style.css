@@ -322,6 +322,9 @@ a.slide__next,
   line-height: 100px;
   margin: 0;
 }
+#welcome span {
+  text-decoration: underline;
+}
 
 #about {
   text-align: left;
