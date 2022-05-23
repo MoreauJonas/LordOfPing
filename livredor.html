@@ -22,14 +22,16 @@
         <li><a href="army.html">Armée</a></li>
         <li><a href="exploits.html">Exploits</a></li>
         <li><a href="shop.html">Boutique</a></li>
-        <li><a href="livredor.html">Livre d'Or</a></li>
+        <li><a href="livredor.html">Nous rejoindre</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </header>
-  <h1>Votre avis nous intéresse!</h1>
-  <p>Envie de nous envoyer un commentaire d'amour ou nous faire remonter un problème ? <br> N'hésitez pas à utiliser ce
-    formulaire pour partager votre avis !</p>
+  <h1>Nous recrutons!</h1>
+  <p> Le poulet est votre animal fétiche ? 
+    <br> Javascript n'a pas de secret pour vous? 
+    <br> Vous êtes prêts à dévouer corps et âmes pour sauver nos amis les poulets?  
+    <br><br> <b>Alors, n'attendez plus, rejoignez-notre armée !</b></p>
   <main>
     <section class="review">
       <form id="form">
@@ -38,131 +40,35 @@
           <input type="text" id="nom" name="nom" placeholder="ex: Frodon">
         </div>
         <div>
-          <label for="rang">Votre rang:</label>
+          <label for="nom">Votre mail:</label>
+          <input type="text" id="mail" name="mail" placeholder="ex: Frodon@jaimelepoulet.com">
+        </div>
+        <div>
+          <label for="rang">Pour quelle raison souhaitez vous rejoindre la Chicken Army?</label>
           <select name="rang" id="rang-select" required>
-            <option value="">Sélectionnez votre rang</option>
-            <option value="roi/Reine">Roi/Reine</option>
-            <option value="noble">Noblesse</option>
-            <option value="clerge">Clergé</option>
-            <option value="roturier">Roturier</option>
-            <option value="creature">Créature fantastique</option>
-            <option value="magie">Créature magique</option>
+            <option value="">Sélectionnez une raison</option>
+            <option value="raison1">Je ne supporte plus voir du poulet pané dans mon assiette (ex: KFC)</option>
+            <option value="raison2">La Chicken Army a toujours été ma plus grande source d'inspiration</option>
+            <option value="raison3">Je rêve la nuit de boucles, flexbox ou algorithmes en tout genre...</option>
+        
           </select>
         </div>
         <div>
-          <label for="royaume">Votre royaume:</label>
-          <textarea id="royaume" name="royaume" placeholder="ex: Fantasia" required></textarea>
+          <label for="royaume">Soumettez votre CV en fournissant son URL:</label>
+          <textarea id="CV" name="CV" placeholder="CV de Frodon" required></textarea>
         </div>
         <div>
-          <label for="avis">Votre avis:</label>
+          <label for="avis">Décrivez vous brievement :</label>
           <textarea id="avis" name="avis" placeholder="Exprimez vous ici..." required></textarea>
         </div>
-        <!--
         <div>
-          <p>Notez nous !</p>
-          <span class="C2etoiles">
-            <span class="C2etoiles">
-              <span class="C2etoiles">
-                <span class="C2etoiles">
-                  <span class="C2etoiles">
-                  </span>
-                </span>
-              </span>
-            </span>
-          </span>
+          <button type="submit">Partager ma candidature</button>
         </div>
-        -->
-        <div>
-          <label for="envoi">Choisissez votre mode d'envoi:</label>
-          <select name="envoi" id="envoi-select" required>
-            <option value="">Les modes d'envoi:</option>
-            <option value="feu">Nuage de fumée</option>
-            <option value="pigeon">Pigeon</option>
-            <option value="messager">Messager</option>
-            <option value="phoenix">Phoenix</option>
-            <option value="telepathie">Télépathie</option>
-            <option value="tardis">Tardis</option>
-          </select>
-        </div>
-        <div>
-          <button type="submit">Partager mon commentaire</button>
+        <div class="recrutement image">
+          <img src="./assets/img/Recrutement.png" alt="image gros americain">
         </div>
       </form>
     </section>
-
-    <h1>Ils nous font confiance :</h1>
-    <div class="container">
-      <div class="avis">
-        <div class="rating">
-          <div class="image">
-            <img src="" alt="">
-          </div>
-          <div class="info">
-            <p>John, le roi</p>
-            <span class="C3etoiles">
-              <span class="C3etoiles">
-                <span class="C3etoiles">
-                  <span class="C3etoiles">
-                    <span class="C3etoiles">
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </span>
-          </div>
-        </div>
-        <div class="comments">
-          <p>Grâce à vous, je vais me lancer dans l'aventure et rejoindre vos rangs!</p>
-        </div>
-      </div>
-      <div class="avis">
-        <div class="rating">
-          <div class="image">
-            <img src="" alt="">
-          </div>
-          <div class="info">
-            <p>John, le roi</p>
-            <span class="C3etoiles">
-              <span class="C3etoiles">
-                <span class="C3etoiles">
-                  <span class="C3etoiles">
-                    <span class="C3etoiles">
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </span>
-          </div>
-        </div>
-        <div class="comments">
-          <p>J'ai reçu mon t-shirt et tout mes amis veulent en acheter aussi, il est tellement drôle</p>
-        </div>
-      </div>
-      <div class="avis">
-        <div class="rating">
-          <div class="image">
-            <img src="" alt="">
-          </div>
-          <div class="info">
-            <p>John, le roi</p>
-            <span class="C3etoiles">
-              <span class="C3etoiles">
-                <span class="C3etoiles">
-                  <span class="C3etoiles">
-                    <span class="C3etoiles">
-                    </span>
-                  </span>
-                </span>
-              </span>
-            </span>
-          </div>
-        </div>
-        <div class="comments">
-          <p>un vrai voyage dans votre univers, hâte d'en découvrir plus!</p>
-        </div>
-      </div>
-    </div>
-
   </main>
 
   <footer>Site créé par Lord Of Pings</footer>
