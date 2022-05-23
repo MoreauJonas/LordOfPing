@@ -94,7 +94,6 @@ p{
     0 100%
     );
 }
-
 .group1 { grid-area: 1 / 2 / 2 / 3; }
 .group2 { grid-area: 2 / 2 / 3 / 3; }
 .group3 { grid-area: 3 / 2 / 4 / 3; }
