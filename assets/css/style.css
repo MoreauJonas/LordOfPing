@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-
+       
 header a {
   text-decoration: none;
   color: #fff;
@@ -25,6 +25,7 @@ footer {
   position: fixed;
   bottom: 0;
 }
+              /*---- Header ----*/
 
 header {
   background: #1f1f1f;
@@ -101,6 +102,7 @@ header li:hover {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
 }
+         /*---- Présentation ----*/
 
 main {
   margin: 0 auto;
@@ -176,7 +178,7 @@ main > h1 {
   padding: 10px;
   box-sizing: border-box;
 }
-
+          /*---- Carousel ----*/
 .slider-container {
   display: flex;
   align-items: center;
@@ -216,10 +218,12 @@ main > h1 {
   scroll-snap-align: center;
   margin-right: 0px;
   box-sizing: border-box;
-  background: white;
+  background-color: white;
   transform-origin: center center;
+  background-repeat: no-repeat;
   transform: scale(1);
-  background-size: cover;
+  background-size: contain;
+  background-position: center center;
 }
 
 .slide a {
@@ -231,14 +235,14 @@ a.slide__prev,
 .slider::before {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
-  left: 5%;
+  left: 2%;
 }
 
 a.slide__next,
 .slider::after {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
-  right: 5%;
+  right: 2%;
 }
 
 .slider::before,
@@ -249,9 +253,9 @@ a.slide__next,
   top: 48%;
   width: 35px;
   height: 35px;
-  border: solid black;
+  border: solid #969595;
   border-width: 0 4px 4px 0;
-  padding: 3px;
+  padding: 15px;
   box-sizing: border-box;
 }
 
@@ -278,30 +282,45 @@ a.slide__next,
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #969595;
   margin: 0 10px 0 10px;
+}
+.slider__navlink:hover {
+  background-color: #6c6b6b;
 }
 
 #slides__1 {
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/poulet-aux-fusils.jpg");
 }
 
 #slides__2 {
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/poulet.png");
 }
 
 #slides__3 {
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/poulet2.jpg");
 }
 
 #slides__4 {
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/poulet3.jpg");
+}
+
+#slides__5{
+  background-image: url("../img/poulet-guerre.jpeg");
+}
+#sorry {
+  font-size: clamp(50px, 10vw, 200px);
+  padding-top: 4ch;
+  padding-right: 0.8ch;
+  padding-bottom: 2ch;
+  padding-left: 0.8ch;
+  text-align: center;
 }
 
 #welcome {
   height: 300px;
   width: 100%;
-  background-image: url("/assets/img/cover.jpg");
+  background-image: url("../img/cover.jpg");
   background-size: cover;
 }
 #welcome h1 {
@@ -309,8 +328,11 @@ a.slide__next,
   color: white;
   text-shadow: 4px 2px #333;
   text-align: center;
-  line-height: 300px;
+  line-height: 100px;
   margin: 0;
+}
+#welcome span {
+  text-decoration: underline;
 }
 
 #about {
@@ -340,6 +362,7 @@ a.slide__next,
   background-color: transparent;
   text-decoration: underline;
 }
+       /*---- section responsive ----*/
 
 @media screen and (min-width: 768px) {
   header ul {
@@ -365,7 +388,7 @@ a.slide__next,
 }
 
 @media screen and (min-width: 1800px) {
-  main {
+  main  {
     max-width: 1600px;
   }
   .header {

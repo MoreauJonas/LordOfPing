@@ -19,63 +19,84 @@
           <li><a href="army.html">Armée</a></li>
           <li><a href="exploits.html">Exploits</a></li>
           <li><a href="shop.html">Boutique</a></li>
-          <li><a href="livredor.html">Livre d'Or</a></li>
+          <li><a href="livredor.html">Nous rejoindre</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </header>
+             <!------  section présentatiion ------>
     <section id="welcome">
-      <h1>The Lord of Pings</h1>
+      <h1>The Lord of Ping<span>s</span></h1>
     </section>
     <main>
+      <audio src="/assets/audio/bienvenue.mp3" autoplay></audio>
       <section id="about">
-        <h2>Bienvenue à toi, noble étranger.</h2>
+        <h2>Bienvenue à vous, noble étranger.</h2>
         <p>
           Jadis, vingt-et-un guerriers et guerrières furent appelés à rejoindre
           l'armée de Lord of Pings.<br />
-          Guidés par le chickenLover et son fidèle assistant Thomas, ils
-          entrèrent dans la légende...
+          Guidés par le chickenLover et son fidèle assistant Thomas, le Poulet devint leur emblème. 
         </p>
         <p>
-          Découvre <a href="army.html">qui ils sont</a> et quels furent
+          Grâce aux pouvoirs du code, à une lutte acharnée, à des nuits sans sommeil, et malgré des blessures, malgré la maladie ou les pannes de micro, tous sont entrés dans la légende.
+        </p>
+        <p>
+          Découvrez <a href="army.html">qui ils sont</a> et quels furent
           <a href="exploits.html">leurs plus beaux exploits</a>...
         </p>
+        <p>Si vous souhaitez participez à leur combat, pour remettre le Poulet sur le podium de la chaîne alimentaire (derrière l'Homme et le requin blanc), n'hésitez pas à <a href="livredor.html">postuler</a> !
+        </p>
         <p>
-          Si leur histoire est parvenue jusqu'à nous, c'est aussi grâce aux
-          magnifiques articles disponibles dans
+           Vous pouvez également les aider en achetant les magnifiques articles très abordables disponibles dans
           <a href="shop.html">notre boutique</a> !
         </p>
       </section>
 
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slides">
-            <div id="slides__1" class="slide">
-              <a class="slide__prev" href="#slides__4" title="Next"></a>
-              <a class="slide__next" href="#slides__2" title="Next"></a>
+      <!---------- Carousel ----------->
+      <aside>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slides">
+              <div id="slides__1" class="slide">
+                <a class="slide__prev" href="#slides__4" title="Next" onclick=" audio('cocolong')"></a>
+                <a class="slide__next" href="#slides__2" title="Next" onclick=" cotcot()"></a>
+              </div>
+              <div id="slides__2" class="slide">
+                <a class="slide__prev" href="#slides__1" title="Prev" onclick=" cotcot()"></a>
+                <a class="slide__next" href="#slides__3" title="Next" onclick=" cotcot()"></a>
+              </div>
+              <div id="slides__3" class="slide">
+                <a class="slide__prev" href="#slides__2" title="Prev" onclick=" cotcot()"></a>
+                <a class="slide__next" href="#slides__4" title="Next" onclick=" cotcot()"></a>
+              </div>
+              <div id="slides__4" class="slide">
+                <a class="slide__prev" href="#slides__3" title="Prev" onclick=" cotcot()"></a>
+                <a class="slide__next" href="#slides__5" title="Prev" onclick=" cotcot()"></a>
+              </div>
+              <div id="slides__5" class="slide">
+                <a class="slide__prev" href="#slides__4" title="Prev" onclick=" cotcot()"></a>
+                <a class="slide__next" href="#slides__1" title="Prev" onclick=" audio('cocolong')"></a>
+              </div>
             </div>
-            <div id="slides__2" class="slide">
-              <a class="slide__prev" href="#slides__1" title="Prev"></a>
-              <a class="slide__next" href="#slides__3" title="Next"></a>
+            <div class="slider__nav">
+              <a class="slider__navlink" href="#slides__1" onclick=" audio('cocolong')"></a>
+
+              <a class="slider__navlink" href="#slides__2" onclick=" cotcot()"></a>
+              
+              <a class="slider__navlink" href="#slides__3" onclick=" cotcot()"></a>
+             
+              <a class="slider__navlink" href="#slides__4" onclick=" cotcot()"></a>
+             
+              <a class="slider__navlink" href="#slides__5" onclick=" audio('cocolong')"></a>
+            
             </div>
-            <div id="slides__3" class="slide">
-              <a class="slide__prev" href="#slides__2" title="Prev"></a>
-              <a class="slide__next" href="#slides__4" title="Next"></a>
-            </div>
-            <div id="slides__4" class="slide">
-              <a class="slide__prev" href="#slides__3" title="Prev"></a>
-              <a class="slide__next" href="#slides__1" title="Prev"></a>
-            </div>
-          </div>
-          <div class="slider__nav">
-            <a class="slider__navlink" href="#slides__1"></a>
-            <a class="slider__navlink" href="#slides__2"></a>
-            <a class="slider__navlink" href="#slides__3"></a>
-            <a class="slider__navlink" href="#slides__4"></a>
           </div>
         </div>
-      </div>
+    </aside>    
     </main>
+
+    <!----- Footer ----->
+
     <footer>Site créé par <a href="secret.html">Lord Of Pings</a></footer>
     <script src="assets/js/scripts.js"></script>
   </body>
