@@ -2,7 +2,7 @@ section.army img {
   object-fit: cover;
 } 
 
-#rejoindre{
+#rejoindre {
   margin-top: 50px;
 }
 
@@ -246,11 +246,4 @@ section.army img {
   }
 }
 
-@media screen and (min-width: 1800px) {
-  main {
-    max-width: 1600px;
-  }
-  .header {
-    max-width: 1600px;
-  }
-}
+
