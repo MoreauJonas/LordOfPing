@@ -21,103 +21,104 @@
           <li><a href="exploits.html">Exploits</a></li>
           <li><a href="shop.html">Boutique</a></li>
           <li><a href="livredor.html">Nous rejoindre</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </header>
 
-    <h1>
-      Pour nous joindre, n'hésitez pas à nous laissez vos coordonnées et un
-      message:
-    </h1>
-    
-
     <main>
+      <h1>
+        Pour nous joindre, n'hésitez pas à nous laisser vos coordonnées et un
+        message:
+      </h1>
       <audio src="/assets/audio/tuchercheanouscontacter.mp3" autoplay></audio>
+      <section class="contact">
+        <div class="boxesContainer">
+          <div class="cardBox">
+            <div class="card">
+              <div class="front">
+                <h3>Vous pouvez nous joindre ici</h3>
+                <p>0 800 123 456</p>
+                <p>Allez clique</p>
+                <strong>&#x21bb;</strong>
+              </div>
+              <div class="back">
+                <h3>Ou ce numéro:</h3>
+                <p>0 800 789 012</p>
+                <a href="#">On sait plus</a>
+              </div>
+            </div>
+          </div>
 
-    <section class="contact">
-      
-<div class="boxesContainer">
+          <div class="cardBox">
+            <div class="card">
+              <div class="front">
+                <h3>Mais tu peux aussi nous joindre là</h3>
+                <p>Touche ici pour voir !</p>
+                <strong>&#x21bb;</strong>
+              </div>
+              <div class="back">
+                <h3>lop@cotcot.fr</h3>
+                <p>Mais des fois c'est .com</p>
+                <a href="#">Peu importe...</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="cardBox">
-    <div class="card">
-      <div class="front">
-        <h3>Tu peux nous joindre ici</h3>
-        <p>0 800 123 456</p>
-        <p>Allez clique</p>
-        <strong>&#x21bb;</strong>
-      </div>
-      <div class="back">
-        <h3>Ou ce numéro:</h3>
-        <p>0 800 789 012</p>
-        <a href="#">On sait plus</a>
-      </div>
-    </div>
-  </div>
+        <form id="contactForm">
+          <label for="name">Votre patronyme:</label>
+          <input type="text" id="name" name="name" value="Frodon" />
+          <label for="rang"
+            >Choisissez votre rang ainsi que votre royaume:</label
+          >
 
-  <div class="cardBox">
-    <div class="card">
-      <div class="front">
-        <h3>Mais tu peux aussi nous joindre la</h3>
-        <p>Touche ici pour voir !</p>
-        <strong>&#x21bb;</strong>
-      </div>
-      <div class="back">
-        <h3>lop@cotcot.fr</h3>
-        <p>Mais des fois c'est .com</p>
-        <a href="#">Peu importe...</a>
-      </div>
-    </div>
-  </div>
-</div>
-      
-      <form id="contactForm">
-        <label for="name">Votre patronyme:</label>
-        <input type="text" id="name" name="name" value="Frodon" />
-        <label for="rang">Choisissez votre rang ainsi que votre royaume:</label>
+          <select name="rang" id="rang-select">
+            <option value="">Votre rang:</option>
+            <option value="Roi">Roi / Reine</option>
+            <option value="noble">Noblesse</option>
+            <option value="clerge">Clergé</option>
+            <option value="roturier">Roturier</option>
+            <option value="creature">Créature fantastique</option>
+            <option value="magie">Créature magique</option>
+          </select>
 
-        <select name="rang" id="rang-select">
-          <option value="">Votre rang:</option>
-          <option value="Roi">Roi / Reine</option>
-          <option value="noble">Noblesse</option>
-          <option value="clerge">Clergé</option>
-          <option value="roturier">Roturier</option>
-          <option value="creature">Créature fantastique</option>
-          <option value="magie">Créature magique</option>
-        </select>
+          <select name="world" id="world-select">
+            <option value="">Votre royaume:</option>
+            <option value="Kuheria">Kuheria</option>
+            <option value="Aephachaeus">Aephachaeus</option>
+            <option value="Glioddiosia">Glioddiosia</option>
+            <option value="Ancient Empire">Ancient Empire</option>
+            <option value="Oblivion Realm">Oblivion Realm</option>
+            <option value="Iron Territories">Iron Territories</option>
+          </select>
 
-        <select name="world" id="world-select">
-          <option value="">Votre royaume:</option>
-          <option value="Kuheria">Kuheria</option>
-          <option value="Aephachaeus">Aephachaeus</option>
-          <option value="Glioddiosia">Glioddiosia</option>
-          <option value="Ancient Empire">Ancient Empire</option>
-          <option value="Oblivion Realm">Oblivion Realm</option>
-          <option value="Iron Territories">Iron Territories</option>
-        </select>
+          <label for="message">Votre message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Laissez votre message ici..."
+          ></textarea>
 
-        <label for="message">Votre message:</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Laissez votre message ici..."
-        ></textarea>
+          <label for="envoi">Choisissez votre mode d'envoi:</label>
+          <select name="envoi" id="envoi-select">
+            <option value="">Les modes d'envoi:</option>
+            <option value="feu">Nuage de fumée</option>
+            <option value="pigeon">Pigeon</option>
+            <option value="messager">Messager</option>
+            <option value="phoenix">Phoenix</option>
+            <option value="telepathie">Télépathie</option>
+            <option value="tardis">Tardis</option>
+          </select>
 
-        <label for="envoi">Choisissez votre mode d'envoi:</label>
-        <select name="envoi" id="envoi-select">
-          <option value="">Les modes d'envoi:</option>
-          <option value="feu">Nuage de fumée</option>
-          <option value="pigeon">Pigeon</option>
-          <option value="messager">Messager</option>
-          <option value="phoenix">Phoenix</option>
-          <option value="telepathie">Télépathie</option>
-          <option value="tardis">Tardis</option>
-        </select>
-
-        <input type="submit" value="Envoyer" onclick="audio('nousvousrepondronincessamment')"/>
-      </form>
-    </section>
-  </main>
+          <input
+            type="submit"
+            value="Envoyer"
+            onclick="audio('nousvousrepondronincessamment')"
+          />
+        </form>
+      </section>
+    </main>
     <footer>Site créé par <a href="secret.html">Lord Of Pings</a></footer>
     <script src="assets/js/scripts.js"></script>
   </body>
