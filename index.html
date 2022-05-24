@@ -7,7 +7,7 @@
     <title>Accueil - Lord Of Pings</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body>gst
     <header>
       <div class="header">
         <div class="headerLogo">
@@ -24,6 +24,7 @@
         </ul>
       </div>
     </header>
+             <!------  section présentatiion ------>
     <section id="welcome">
       <h1>The Lord of Pings</h1>
     </section>
@@ -47,35 +48,46 @@
         </p>
       </section>
 
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slides">
-            <div id="slides__1" class="slide">
-              <a class="slide__prev" href="#slides__4" title="Next"></a>
-              <a class="slide__next" href="#slides__2" title="Next"></a>
+      <!---------- Carousel ----------->
+    <aside>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slides">
+              <div id="slides__1" class="slide">
+                <a class="slide__prev" href="#slides__4" title="Next"></a>
+                <a class="slide__next" href="#slides__2" title="Next"></a>
+              </div>
+              <div id="slides__2" class="slide">
+                <a class="slide__prev" href="#slides__1" title="Prev"></a>
+                <a class="slide__next" href="#slides__3" title="Next"></a>
+              </div>
+              <div id="slides__3" class="slide">
+                <a class="slide__prev" href="#slides__2" title="Prev"></a>
+                <a class="slide__next" href="#slides__4" title="Next"></a>
+              </div>
+              <div id="slides__4" class="slide">
+                <a class="slide__prev" href="#slides__3" title="Prev"></a>
+                <a class="slide__next" href="#slides__5" title="Prev"></a>
+              </div>
+              <div id="slides__5" class="slide">
+                <a class="slide__prev" href="#slides__4" title="Prev"></a>
+                <a class="slide__next" href="#slides__1" title="Prev"></a>
+              </div>
             </div>
-            <div id="slides__2" class="slide">
-              <a class="slide__prev" href="#slides__1" title="Prev"></a>
-              <a class="slide__next" href="#slides__3" title="Next"></a>
+            <div class="slider__nav">
+              <a class="slider__navlink" href="#slides__1"></a>
+              <a class="slider__navlink" href="#slides__2"></a>
+              <a class="slider__navlink" href="#slides__3"></a>
+              <a class="slider__navlink" href="#slides__4"></a>
+              <a class="slider__navlink" href="#slides__5"></a>
             </div>
-            <div id="slides__3" class="slide">
-              <a class="slide__prev" href="#slides__2" title="Prev"></a>
-              <a class="slide__next" href="#slides__4" title="Next"></a>
-            </div>
-            <div id="slides__4" class="slide">
-              <a class="slide__prev" href="#slides__3" title="Prev"></a>
-              <a class="slide__next" href="#slides__1" title="Prev"></a>
-            </div>
-          </div>
-          <div class="slider__nav">
-            <a class="slider__navlink" href="#slides__1"></a>
-            <a class="slider__navlink" href="#slides__2"></a>
-            <a class="slider__navlink" href="#slides__3"></a>
-            <a class="slider__navlink" href="#slides__4"></a>
           </div>
         </div>
-      </div>
+    </aside>    
     </main>
+
+    <!----- Footer ----->
+
     <footer>Site créé par <a href="secret.html">Lord Of Pings</a></footer>
     <script src="assets/js/scripts.js"></script>
   </body>
