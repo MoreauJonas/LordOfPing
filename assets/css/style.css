@@ -308,6 +308,14 @@ a.slide__next,
 #slides__5{
   background-image: url("../img/poulet4.jpg");
 }
+#sorry {
+  font-size: clamp(50px, 10vw, 200px);
+  padding-top: 4ch;
+  padding-right: 0.8ch;
+  padding-bottom: 2ch;
+  padding-left: 0.8ch;
+  text-align: center;
+}
 
 #welcome {
   height: 300px;

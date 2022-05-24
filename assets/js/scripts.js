@@ -36,3 +36,11 @@ document
     event.preventDefault();
     alert(message);
   });
+
+  /* SECRET PAGE */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
