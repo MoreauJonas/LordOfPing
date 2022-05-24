@@ -24,6 +24,7 @@
       </div>
     </header>
     <main>
+      <!-- <audio src="/assets/audio/voulezvousquelque.mp3" autoplay></audio> -->
       <h1>Boutique</h1>
       <div class="shop">
         <div class="shopCase">
@@ -32,7 +33,7 @@
           <div>
             <h2>Cape du Chicken Lover</h2>
             <a href="#">
-              <button>Acheter</button>
+              <button onclick="audio('ethopauxpannier')">Acheter</button>
             </a>
           </div>
         </div>
@@ -42,7 +43,7 @@
           <div>
             <h2>Mug Lord Of Pings</h2>
             <a href="#">
-              <button>Acheter</button>
+              <button onclick="audio('ethopauxpannier')">Acheter</button>
             </a>
           </div>
         </div>
@@ -52,7 +53,7 @@
           <div>
             <h2>Cape du Chicken Lover</h2>
             <a href="#">
-              <button>Acheter</button>
+              <button onclick="audio('ethopauxpannier')">Acheter</button>
             </a>
           </div>
         </div>
@@ -62,7 +63,7 @@
           <div>
             <h2>Cape du Chicken Lover</h2>
             <a href="#">
-              <button>Acheter</button>
+              <button onclick="audio('ethopauxpannier')">Acheter</button>
             </a>
           </div>
         </div>
@@ -72,7 +73,7 @@
           <div>
             <h2>Cape du Chicken Lover</h2>
             <a href="#">
-              <button>Acheter</button>
+              <button onclick="audio('ethopauxpannier')">Acheter</button>
             </a>
           </div>
         </div>
@@ -82,7 +83,7 @@
           <div>
             <h2>Cape du Chicken Lover</h2>
             <a href="#">
-              <button>Acheter</button>
+              <button onclick="audio('ethopauxpannier')">Acheter</button>
             </a>
           </div>
         </div>
@@ -92,7 +93,7 @@
           <div>
             <h2>Cape du Chicken Lover</h2>
             <a href="#">
-              <button>Acheter</button>
+              <button onclick="audio('ethopauxpannier')">Acheter</button>
             </a>
           </div>
         </div>
@@ -102,7 +103,7 @@
           <div>
             <h2>Cape du Chicken Lover</h2>
             <a href="#">
-              <button>Acheter</button>
+              <button onclick="audio('ethopauxpannier')">Acheter</button>
             </a>
           </div>
         </div>
@@ -115,10 +116,10 @@
         </div>
         <div class="shopPlay">
           <h3>Trouve le bon nombre</h3>
-          <span>Nombre en 1 et 100</span>
-          <span>Félicitation vous avez Gagné !</span>
-          <p>30 secondes</p>
-          <input type="number" placeholder="Entrez un nombre..." />
+          <span>Nombre entre 1 et 100</span>
+          <p id="gameText">Entre un nombre pour commencer à jouer</p>
+          <small><span id="gameTime">30</span> secondes</small>
+          <input type="number" placeholder="Entrez un nombre..." id="game" onchange="game()" />
         </div>
       </div>
     </main>
