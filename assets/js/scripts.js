@@ -40,7 +40,7 @@ function game() {
       if (gameTime === 0) {
         gameAudio.pause();
         clearInterval(gameTimer);
-        audio("chicken");
+        audio("cestlqdefqite");
       }
     }, 1000);
   }
