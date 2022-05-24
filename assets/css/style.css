@@ -308,6 +308,14 @@ a.slide__next,
 #slides__5{
   background-image: url("../img/poulet-guerre.jpeg");
 }
+#sorry {
+  font-size: clamp(50px, 10vw, 200px);
+  padding-top: 4ch;
+  padding-right: 0.8ch;
+  padding-bottom: 2ch;
+  padding-left: 0.8ch;
+  text-align: center;
+}
 
 #welcome {
   height: 300px;
@@ -320,8 +328,11 @@ a.slide__next,
   color: white;
   text-shadow: 4px 2px #333;
   text-align: center;
-  line-height: 300px;
+  line-height: 100px;
   margin: 0;
+}
+#welcome span {
+  text-decoration: underline;
 }
 
 #about {
