@@ -2,14 +2,13 @@ section.army img {
   object-fit: cover;
 } 
 
-p {
-  margin-bottom: 50px;
-}
-
 #rejoindre{
   margin-top: 50px;
 }
 
+#lien {
+  color: #dee2e6;
+}
 .armyGeneral, .armyCommander {
   
   color: black;

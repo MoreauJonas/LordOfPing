@@ -32,24 +32,10 @@
     </h1>
 
     <main>
+      <audio src="/assets/audio/tuchercheanouscontacter.mp3" autoplay></audio>
+
       <section class="contact">
         <div class="boxesContainer">
-          <div class="cardBox">
-            <div class="card">
-              <div class="front">
-                <h3>Vous pouvez nous joindre ici</h3>
-                <p>0 800 123 456</p>
-                <p>Allez clique</p>
-                <strong>&#x21bb;</strong>
-              </div>
-              <div class="back">
-                <h3>Ou ce numéro:</h3>
-                <p>0 800 789 012</p>
-                <a href="#">On sait plus</a>
-              </div>
-            </div>
-          </div>
-
           <div class="cardBox">
             <div class="card">
               <div class="front">
@@ -111,7 +97,11 @@
             <option value="tardis">Tardis</option>
           </select>
 
-          <input type="submit" value="Envoyer" />
+          <input
+            type="submit"
+            value="Envoyer"
+            onclick="audio('nousvousrepondronincessamment')"
+          />
         </form>
       </section>
     </main>
