@@ -376,7 +376,7 @@ a.slide__next,
   text-decoration: none;
 }
 
-#about a:hover {
+#about a {
   color: #fff;
   background-color: transparent;
   text-decoration: underline;
