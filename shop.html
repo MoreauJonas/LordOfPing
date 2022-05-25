@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique - Lord Of Pings</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="headerLogo">
+          <a href="index.html"><img src="assets/img/logo.png" alt="logo" /></a>
+        </div>
+        <ul id="headerMenu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="army.html">Armée</a></li>
+          <li><a href="exploits.html">Exploits</a></li>
+          <li class="active"><a href="shop.html">Boutique</a></li>
+          <li><a href="livredor.html">Nous rejoindre</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="dyslexic">Mode Dyslexique</button>
+        <div id="mobileMenu"></div>
+      </div>
+    </header>
+    <main>
+      <audio src="/assets/audio/voulezvousquelque.mp3" autoplay></audio>
+      <h1>Boutique</h1>
+      <div class="shop"></div>
+      <div class="shopGame">
+        <div class="shopDesc">
+          <h4>
+            Tentez de gagner un coupon de <span>30% de réduction</span> en
+            jouant à notre jeu:
+          </h4>
+          <h5>Trouvez le bon nombre !</h5>
+          <p>Attention vous n'avez que 30s pour réaliser ce challenge</p>
+        </div>
+        <div class="shopPlay">
+          <h3>Trouvez le bon nombre</h3>
+          <span>Nombre entre 1 et 100</span>
+          <p id="gameText">Entrez un nombre pour commencer à jouer</p>
+          <small><span id="gameTime">30</span> secondes</small>
+          <input
+            type="number"
+            placeholder="Entrez un nombre..."
+            id="game"
+            onchange="game()"
+            min="1"
+            max="100"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>Site créé par <a href="secret.html">Lord Of Pings</a></footer>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

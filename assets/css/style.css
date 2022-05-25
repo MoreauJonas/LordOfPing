@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+@font-face {
+  font-family: "Open Dyslexic";
+  src: url("/assets/fonts/OpenDyslexic-Regular.otf");
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body,
+html {
+  background: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+body.active {
+  font-family: "Open Dyslexic", sans-serif;
+}
+
+footer {
+  background: #1f1f1f;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
+
+footer a {
+  cursor: text;
+}
+/*---- Header ----*/
+
+header {
+  background: #1f1f1f;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+header img {
+  height: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#mobileMenu {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  border-radius: 50%;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  display: flex;
+  float: right;
+}
+
+#mobileMenu::after {
+  content: "III";
+}
+
+#mobileMenu.active {
+  -webkit-transform: initial;
+  -moz-transform: initial;
+  -ms-transform: initial;
+  -o-transform: initial;
+  transform: initial;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: none;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+header ul.active {
+  display: initial;
+  position: absolute;
+  background: #1f1f1f;
+  width: 100%;
+  top: 60px;
+  left: 0;
+}
+
+header li {
+  padding: 10px;
+  margin: 0 2px;
+  font-size: 14px;
+}
+
+header li:hover,
+header li.active,
+header button:hover,
+header button.active {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+header button {
+  font-family: "Open Dyslexic", sans-serif;
+  background: #343434;
+  cursor: pointer;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 10px;
+  line-height: 12px;
+  margin: 0 8px 0 auto;
+  outline: none;
+}
+/*---- Présentation ----*/
+
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: calc(100vh - 120px);
+  width: 100%;
+  padding: 10px 10px 80px;
+  box-sizing: border-box;
+}
+
+main > h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 32px 0;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+}
+
+.shopCase {
+  width: 100%;
+  height: 100%;
+}
+
+.shopCase img {
+  width: 100%;
+  height: 12rem;
+  object-fit: contain;
+  background: #f2f2f2;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.shopCase div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.shopCase h2 {
+  font-size: 10px;
+  margin: 8px 6px 0;
+}
+
+.shopCase button {
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 16px;
+  border-radius: 8px;
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+
+.shopGame {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.shopDesc {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.shopPlay {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.shopPlay input {
+  width: 100%;
+  border: none;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+/*---- Carousel ----*/
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.slider {
+  width: 100%;
+  height: 400px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  box-sizing: border-box;
+  background-color: white;
+  transform-origin: center center;
+  background-repeat: no-repeat;
+  transform: scale(1);
+  background-size: contain;
+  background-position: center center;
+}
+
+.slide a {
+  background: none;
+  border: none;
+}
+
+a.slide__prev,
+.slider::before {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 2%;
+}
+
+a.slide__next,
+.slider::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 2%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
+  position: absolute;
+  top: 48%;
+  width: 35px;
+  height: 35px;
+  border: solid #969595;
+  border-width: 0 4px 4px 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  z-index: 1;
+  background: none;
+  pointer-events: none;
+}
+
+.slider__nav {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.slider__navlink {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #969595;
+  margin: 0 10px 0 10px;
+}
+.slider__navlink:hover {
+  background-color: #6c6b6b;
+}
+
+#slides__1 {
+  background-image: url("../img/poulet-aux-fusils.jpg");
+}
+
+#slides__2 {
+  background-image: url("../img/poulet.png");
+}
+
+#slides__3 {
+  background-image: url("../img/poulet2.jpg");
+}
+
+#slides__4 {
+  background-image: url("../img/poulet3.jpg");
+}
+
+#slides__5 {
+  background-image: url("../img/poulet-guerre.jpeg");
+}
+#sorry {
+  font-size: clamp(50px, 10vw, 200px);
+  padding-top: 4ch;
+  padding-right: 0.8ch;
+  padding-bottom: 2ch;
+  padding-left: 0.8ch;
+  text-align: center;
+}
+
+#welcome {
+  height: 300px;
+  width: 100%;
+  background-image: url("../img/cover.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#welcome h1 {
+  font-size: clamp(30px, 4vw, 70px);
+  color: white;
+  text-shadow: 4px 2px #333;
+  line-height: 100px;
+  margin: 0;
+}
+#welcome span {
+  text-decoration: underline;
+}
+
+#about {
+  text-align: left;
+  margin: 4rem;
+}
+#about a {
+  color: #dee2e6;
+  background-color: transparent;
+}
+
+#about a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#about a {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#about a:active {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/*---- section responsive ----*/
+
+@media screen and (min-width: 768px) {
+  header ul {
+    display: initial;
+  }
+  #mobileMenu {
+    display: none;
+  }
+  .header {
+    justify-content: flex-start;
+  }
+  #headerMenu {
+    display: flex;
+  }
+  .shop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .shopGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  main {
+    max-width: 1600px;
+  }
+  .header {
+    max-width: 1600px;
+  }
+  .shop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

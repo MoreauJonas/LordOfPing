@@ -1,0 +1,59 @@
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-left: 0px;
+  }
+  p {
+    margin-left: 0px;
+  }
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 83px;
+}
+
+form label {
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+form label {
+  margin-top: 25px;
+}
+
+form input,
+form select,
+form textarea {
+  font-size: 16px;
+  font-weight: 500;
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  box-shadow: 0px 2px 2px 0px rgba(255, 255, 255, 0.478);
+}
+
+form button {
+  width: clamp(100%, 100vw, 300px);
+  max-width: 500px;
+  height: 60px;
+  font-weight: 700;
+  font-size: clamp(16px, 4vw, 24px);
+  margin-top: 35px;
+  background: white;
+  border: rgba(48, 48, 48, 0.5) solid 1px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #303030;
+}
+
+form div:last-child {
+  align-items: center;
+}
+
+.recrutement img {
+  margin-top: 50px;
+  width: 400px;
+  max-width: 100%;
+}
