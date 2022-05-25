@@ -124,7 +124,7 @@ section.army img {
 .armySoldier {
   display: flex;
   padding: 5px 15px;
-  width: 182px;
+  max-width: 182px;
   font-size: 18px;
   line-height: 18px;
   align-items: center;
