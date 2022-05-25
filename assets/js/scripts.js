@@ -83,6 +83,67 @@ function cotcot() {
   audio(sound[random]);
 }
 
+/* SHOP */
+const products = [
+  {
+    name: "T-Shirt",
+    price: 10,
+    img: "tshirt.jpg",
+  },
+  {
+    name: "Mug",
+    price: 5,
+    img: "mug.jpg",
+  },
+  {
+    name: "Badge",
+    price: 1,
+    img: "badge.jpg",
+  },
+  {
+    name: "Coque de téléphone",
+    price: 10,
+    img: "phoneshell.jpg",
+  },
+  {
+    name: "Sac à dos",
+    price: 10,
+    img: "backpack.jpg",
+  },
+  {
+    name: "Banane",
+    price: 10,
+    img: "banana.jpg",
+  },
+];
+const cards = document.querySelector(".shop");
+
+function createCard(title, img) {
+  const card = document.createElement("div");
+  card.classList.add("shopCase");
+  cards.appendChild(card);
+
+  const cardImg = document.createElement("img");
+  cardImg.src = "/assets/img/products/" + img;
+  card.appendChild(cardImg);
+
+  const cardBody = document.createElement("div");
+  card.appendChild(cardBody);
+
+  const cardTitle = document.createElement("h2");
+  cardBody.appendChild(cardTitle);
+  cardTitle.innerHTML = title;
+
+  const cardButton = document.createElement("button");
+  cardButton.onclick = () => audio("ethopauxpannier");
+  cardBody.appendChild(cardButton);
+  cardButton.innerHTML = "Acheter";
+}
+
+for (let i of products) {
+  createCard(i.name, i.img);
+}
+
 /* CONTACT FORM */
 const message =
   "Merci de nous avoir contacté, si votre question ou suggestion est pertinente, nous vous répondrons sous peu !";
@@ -94,6 +155,6 @@ document
   });
 
 /* SECRET PAGE */
-$(".hover").mouseleave(function () {
-  $(this).removeClass("hover");
-});
+// $(".hover").mouseleave(function () {
+//   $(this).removeClass("hover");
+// });
