@@ -1,31 +1,28 @@
 .error {
-    display:flex;
-    justify-content: center;
-    font-size: clamp(50px, 10vw, 100px);
+  display: flex;
+  justify-content: center;
+  font-size: clamp(50px, 10vw, 100px);
 }
 
-
-.return, a {
-    display: flex;
-    justify-content: center;
+.return,
+a {
+  display: flex;
+  justify-content: center;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 a:hover {
-    color: #666464;
+  color: #666464;
 }
 @media screen and (min-width: 768px) {
-    .error {
-      display:flex;
-      justify-content: center;
-    }
-    .return {
-      justify-content: center;
-    }
+  .error {
+    display: flex;
+    justify-content: center;
+  }
+  .return {
+    justify-content: center;
+  }
 }
-  
- 
-

@@ -22,13 +22,27 @@ document.addEventListener("click", function (e) {
       }
     }
   }
+
+  /* DYSLEXIC MODE */
+  const dyslexic = document.getElementById("dyslexic");
+  if (e.target === dyslexic) {
+    document.getElementsByTagName("body")[0].classList.toggle("active");
+    dyslexic.classList.toggle("active");
+    document.cookie === "dyslexic=true"
+      ? (document.cookie = "dyslexic=false")
+      : (document.cookie = "dyslexic=true");
+  }
 });
+if (document.cookie === "dyslexic=true") {
+  console.log("dyslexic");
+  document.getElementsByTagName("body")[0].classList.add("active");
+  document.getElementById("dyslexic")?.classList.add("active");
+}
 
 /* MINI-GAME */
 let gameTime = 30;
 let gameTimer;
 const random = Math.floor(Math.random() * 100) + 1;
-console.log(random);
 let gameAudio = new Audio(`/assets/audio/music.mp3`);
 function game() {
   if (gameTime === 30) {
@@ -118,7 +132,7 @@ const products = [
 ];
 const cards = document.querySelector(".shop");
 
-function createCard(title, img) {
+function createCard(title, price, img) {
   const card = document.createElement("div");
   card.classList.add("shopCase");
   cards.appendChild(card);
@@ -137,11 +151,14 @@ function createCard(title, img) {
   const cardButton = document.createElement("button");
   cardButton.onclick = () => audio("ethopauxpannier");
   cardBody.appendChild(cardButton);
-  cardButton.innerHTML = "Acheter";
+  let text = `Acheter (${price}€)`;
+  cardButton.innerHTML = text;
 }
 
-for (let i of products) {
-  createCard(i.name, i.img);
+if (cards) {
+  for (let i of products) {
+    createCard(i.name, i.price, i.img);
+  }
 }
 
 /* CONTACT FORM */
@@ -153,8 +170,3 @@ document
     event.preventDefault();
     alert(message);
   });
-
-/* SECRET PAGE */
-// $(".hover").mouseleave(function () {
-//   $(this).removeClass("hover");
-// });
