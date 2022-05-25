@@ -97,6 +97,10 @@ function cotcot() {
   audio(sound[random]);
 }
 
+gameTimer = setTimeout(function () {
+  audio("votreamenous");
+}, 60000);
+
 /* SHOP */
 const products = [
   {
