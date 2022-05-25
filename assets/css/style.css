@@ -374,12 +374,14 @@ a.slide__next,
   width: 100%;
   background-image: url("../img/cover.jpg");
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #welcome h1 {
-  font-size: 320%;
+  font-size: clamp(30px, 4vw, 70px);
   color: white;
   text-shadow: 4px 2px #333;
-  text-align: center;
   line-height: 100px;
   margin: 0;
 }
@@ -391,10 +393,9 @@ a.slide__next,
   text-align: left;
   margin: 4rem;
 }
-#about a:link {
-  color: #fff;
+#about a {
+  color: #dee2e6;
   background-color: transparent;
-  text-decoration: none;
 }
 
 #about a:visited {
